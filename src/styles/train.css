@@ -1,0 +1,203 @@
+html,body{
+    margin:0;
+    padding:0;
+    height:100%
+}
+.no-select {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+#scroll{
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+}
+#navigation{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 6;
+    background: rgba(28, 26, 26, 0.85);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+#content_div0{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    filter: contrast(150%);
+    position: relative;
+    object-fit: fill;
+    scroll-snap-align: start;
+}
+#content_div1{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    scroll-snap-align: start;
+    position: relative;
+}
+#Carousel_chart{
+    width: 500px;
+    height: 50%;
+    margin: auto;
+    transform: translateY(50%);
+    background-color: black;
+
+}
+#Carousel_chart img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+label{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 1em;
+}
+ul{
+    line-height: 41px;
+    align-content: center;
+}
+li{
+    float: left;
+    list-style: none;
+
+}
+li a{
+    display: block;
+    padding: 10px;
+    font-size: 22px;
+    color: white;
+    margin-top: 6px;
+    text-decoration: none;
+    border-bottom: 80px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+a:hover{
+    color: #fffa00;
+}
+li:hover{
+    border-bottom: solid yellow;
+}
+
+#icon img{
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    float: left;
+    margin-left: 70px;
+    margin-right: 130px;
+    z-index: 7;
+}
+#game{
+    width: 200px;
+    height: 80px;
+    position: fixed;
+    background-color: #f1ed8a;
+    border-bottom-left-radius: 30px;
+    z-index: 6;
+    left: 90%;
+}
+#game p{
+    font-size: 25px;
+    margin-left: 27%;
+    margin-top: 20px;
+}
+#nav{
+    opacity: 0.6;
+    margin-left: 300px;
+}
+#div1 input{
+    border-radius: 30px;
+    border:none;
+}
+#img_12\+{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 90%;
+}
+#play{
+    width: 220px;
+    height: auto;
+    position: absolute;
+    margin-top: 500px;
+    transform: translateX(600px);
+}
+#gameDown{
+    display: flex;
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 15%;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+#gameDown>div{
+    width: 45%;
+    height: 35%;
+    display: inline-block;
+}
+#gameDown>div img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#QR_code{
+    width: 200px;
+    display: flex;
+    height: 130px;
+    position: absolute;
+    margin-top: 507px;
+    margin-left: 1%;
+    justify-content: space-between;
+}
+#QR_code>div{
+    width: 45%;
+    height: 85%;
+    display: inline-block;
+    background-color: #fffa00;
+}
+#QR_code>div img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#introduction{
+    width: 400px;
+    height: 130px;
+    position: absolute;
+    margin-top: 637px;
+    transform: translateX(30px);
+    color: aliceblue;
+    line-height: 80%;
+}
+#diff{
+    color: #fffa00;
+    font-size: 30px;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: fixed;
+    z-index: 100;
+    animation-name: diff;
+}
+@keyframes diff{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(1800px);
+    }
+}
